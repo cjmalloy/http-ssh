@@ -39,7 +39,7 @@ server() {
 
   chmod 600 /etc/ssh/authorized_keys
   ssh-keygen -A
-  /usr/sbin/sshd -D
+  /usr/sbin/sshd -D -e
 }
 
 if [ -n "$KEY" ]; then
